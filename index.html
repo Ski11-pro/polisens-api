@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feb #3</title>
+	<style>
+		body {
+			margin: 0;
+			background-color: #222; 
+			color: #fff;
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+		} 
+
+		.card {
+			width: 30%;
+			height: 200px;
+			background-color: #444;
+			margin-bottom: 20px;
+			position: relative;
+			overflow: hidden;
+			cursor: pointer;
+			transition: transform 0.5s ease-in-out;
+		}
+		.card:hover {
+			transform: scale(1.1);
+			box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.2);
+		}
+		.card:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+		.card:hover:before {
+			opacity: 1;
+		}
+		.card h2 {
+			position: absolute;
+			bottom: 20px;
+			left: 20px;
+			margin: 0;
+			z-index: 2;
+			font-size: 24px;
+			transition: transform 0.5s ease-in-out;
+		}
+		.card:hover h2 {
+			transform: translateY(-20px);
+		}
+
+		.card img {
+			height: 100%;
+			object-fit: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transition: transform 0.5s ease-in-out;
+		}
+		.card:hover img {
+			transform: scale(1.1);
+		}
+
+		nav {
+			background-color: #333;
+			padding: 10px;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			margin: 10px;
+			font-size: 18px;
+		}
+
+	    footer {
+			background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            }
+            footer img {
+            height: 50px;
+            margin: 0 20px;
+            opacity: 0.7;
+            transition: opacity 0.5s ease-in-out;
+            }
+            footer img:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        nav li {
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            transition: opacity 0.5s ease-in-out;
+        }
+        nav a:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+
+        .content {
+            width: 100%;
+            height: 300px;
+            background-color: #666;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content p {
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.2);
+        }
+        .content p:nth-child(even) {
+            background-color: #444;
+        }
+        .content p:first-child {
+            margin-right: 20px;
+        }
+        .content p:last-child {
+            margin-left: 20px;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Feb Coding</h1>
+        </header>
+    <nav>
+	<ul>
+		<li><a href="#">Hem</a></li>
+		<li><a href="#">Om</a></li>
+		<li><a href="#">Feb</a></li>
+	</ul>
+</nav>
+<head>
+<div class="container">
+    </div>
+    <footer>
+        <a href="https://github.com" target="_blank">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github">
+        </a>
+        <a href="https://facebook.com" target="_blank">
+            <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="facebook">
+        </a>
+        <a href="https://youtube.com" target="_blank">
+            <img src="https://www.freepnglogos.com/uploads/youtube-logo-hd-8.png" alt="youtube">
+        </a>
+    </footer>
+</div>
+<script src="script.js"></script>
+</head>
+
+
